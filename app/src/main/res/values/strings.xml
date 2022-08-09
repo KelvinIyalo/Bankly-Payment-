@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bankly Pay</string>
+    <string name="all_transaction_list_is_empty">All Transaction List Is Empty</string>
+    <string name="credit_transaction_list_is_empty">Credit Transaction List is Empty</string>
+    <string name="transfer_heading">Transfer - Charge</string>
+    <string name="date_time">23, Apr 2022. 12:00:32 PM</string>
+    <string name="amount">N29,000</string>
+    <string name="transaction_status">Successful</string>
+    <string name="search_transaction">Search Transaction</string>
+    <string name="filter">Filter</string>
+    <string name="transactions">Transactions</string>
+</resources>

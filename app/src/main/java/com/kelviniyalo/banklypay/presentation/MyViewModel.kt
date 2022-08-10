@@ -12,14 +12,9 @@ import javax.inject.Inject
 @HiltViewModel
 class MyViewModel @Inject constructor(private val repository: Repository):ViewModel() {
 
-    val list:MutableLiveData<Transactions> = MutableLiveData()
 
-    init {
-        getAllTransactions()
-    }
    internal fun getAllTransactions() = liveData  {
        emit(UiState.Loading)
-       list.postValue(repository.getTransactions())
       emit(UiState.Success(repository.getTransactions()))
     }
 }

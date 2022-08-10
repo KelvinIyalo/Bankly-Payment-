@@ -88,36 +88,46 @@
                 android:id="@+id/filter"
                 android:layout_width="85dp"
                 android:layout_height="wrap_content"
-                android:maxHeight="40dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="@dimen/small_margin"
-                android:textAlignment="center"
                 android:background="@drawable/square_bg"
+                android:maxHeight="40dp"
                 android:padding="6dp"
                 android:text="@string/filter"
+                android:textAlignment="center"
                 android:textColor="@color/purple"
                 app:drawableEndCompat="@drawable/ic_filter_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-       </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.tabs.TabLayout
-        android:background="@color/white"
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_margin"
         android:layout_marginTop="@dimen/default_margin"
         android:layout_marginEnd="@dimen/default_margin"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card_view"
         app:tabIndicatorColor="@color/purple_700"
         app:tabSelectedTextColor="@color/purple_700" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
+        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
